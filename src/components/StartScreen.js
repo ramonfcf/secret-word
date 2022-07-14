@@ -1,12 +1,12 @@
 import React from 'react'
 import "./StartScreen.css"
 
-const StartScreen = () => {
+const StartScreen = ({ startGame }) => {
   return (
     <div className='start'>
       <h1>Secret Words</h1>
       <p>Clique no botão abaixo para começar</p>
-      <button>Começar</button>
+      <button onClick={startGame}>Começar</button>
     </div>
   )
 }
